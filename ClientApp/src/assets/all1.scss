@@ -1,3 +1,4 @@
+@import "scssfun/opacity.scss";
 #header{
       display: inline-block;
       width:100%;
@@ -9,14 +10,16 @@
         {
             display: inline-block;
             width: 100%;
-            max-width: 940px;
-            height: 70px;
+            max-width: 940px;        
             margin: 0 auto;
             font-weight:bold;
+           
 
          >*{
             float: left;
             display: inline-block;
+            height: 70px;
+            line-height: 70px;
          } 
          .logo{
              width: 120px;
@@ -24,13 +27,54 @@
              color:white;
              font-weight:bold;
          }
-         .menu{
-            width: 120px;
-            font-size: 18px;
-            color: white;
+         
+        .admin{
+            width: 60px;
+            font-size: 16px;
+            color:white;
             font-weight: bold;
-         }
+        
+        }
 
+        .menu{
+            width: calc(100% - 120px - 60px);
+         
+            >*{
+                position: relative;
+                display: inline-block;
+                float: left;
+                text-decoration: none ;
+                color:rgba(155,155,155,1.00);
+                font-weight: bold;
+                font-size: 16px;
+                padding: 0 16px;
+                
+                &:after{
+                    content:'';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;                   
+                    display: inline-block;
+                    width: 100%;
+                    height: 3px;
+                    background-color:rgba(155,155,155,1.00); 
+                    opacity: 0;
+                }
+                &.active,&:hover{
+                    color: rgba(255,255,255,1.00);
+                    
+                    &:after{
+                        color: rgba(255,255,255,1.00);
+                        background-color: white;
+                        opacity:1 ;
+                        
+                    }
+                }
+            }
+            
+    
+            
+         }
        
         }
   }
