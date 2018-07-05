@@ -74,6 +74,7 @@
 }
 
 #main {
+  margin-top: 32px;
   display: inline-block;
   width: 100%;
   border: 1px solid rgba(255, 0, 0, 0.3);
@@ -127,4 +128,51 @@
   float: right;
   display: inline-block;
   border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#main .container .info .right > * > span {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+#main .container .info .right > * > i {
+  color: black;
+  font-size: 16px;
+}
+
+#main .container .info .right .unit {
+  margin-left: 16px;
+}
+
+#main .container .info .right .dates > * {
+  display: inline-block;
+  float: left;
+}
+
+#main .container .n3 {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#main .container .n3 > * {
+  display: inline-block;
+  float: left;
+  width: calc(100% - 20px * 2/3);
+  height: 138px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#main .container .n3 > * + * {
+  margin-left: 20px;
+}
+
+#main .container .n3 .panel div {
+  display: inline-block;
+  width: 100%;
+}
+
+.panel {
+  display: inline-block;
+  background-color: white;
 }
