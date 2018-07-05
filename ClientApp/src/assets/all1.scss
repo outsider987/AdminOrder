@@ -1,4 +1,4 @@
-@import "scssfun/opacity.scss";
+@import 'SCSSfun.scss';
 #header{
       display: inline-block;
       width:100%;
@@ -78,5 +78,42 @@
        
         }
   }
+#main{
+   display: inline-block;
+    width:100%;
+    border:1px solid rgba(255,0,0,.3);
+    .container{
+        border: 1px solid rgba(255,0,0,.3);
+        .info{
+            display: inline-block;
+            width: 100%;
+            @include clearfix();
+            >*{
+                
+                float:left;
+                display: inline-block;
+                width: 50%;
+                height:32px;
+                line-height: 32px;
+                border:1px solid rgba(255,0,0,.3);
+            }
+            .left{
+                color: black;
+                font-size: 24px;
+                font-weight: bold;               
+                text-align: left;
+            }
+            .right{
+                @include clearfix ();
+                >*{
+                    float:right;
+                    display: inline-block;
+                    border:1px solid rgba(255,0,0,.3);
+                }
+            }
+        }
+       
+    }
+}
   
   
