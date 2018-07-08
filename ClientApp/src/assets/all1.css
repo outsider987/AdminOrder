@@ -16,6 +16,18 @@ html body {
   background: #EBEBEB;
 }
 
+.green {
+  color: #7ED321;
+}
+
+.red {
+  color: #D0021B;
+}
+
+.blue {
+  color: #4A90E2;
+}
+
 #header {
   display: inline-block;
   width: 100%;
@@ -196,6 +208,7 @@ html body {
 }
 
 #main .container .n3 {
+  margin-top: 16px;
   display: inline-block;
   width: 100%;
   border: 1px solid rgba(255, 0, 0, 0.3);
@@ -222,6 +235,7 @@ html body {
 }
 
 #main .container .n3 .panel div {
+  margin-top: 2.4%;
   display: inline-block;
   width: 100%;
   font-size: 16px;
@@ -231,19 +245,34 @@ html body {
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
+#main .container .n3 .panel b {
+  font-size: 36px;
+}
+
+#main .container .n2 {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+}
+
+#main .container .n2 .panel {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#main .container .n2 .panel .Table_Title {
+  margin-top: 2.4%;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  float: left;
+  font-weight: bold;
+  color: black;
+  size: 24px;
+}
+
 .panel {
   display: inline-block;
+  text-align: center;
   background-color: white;
-  -webkit-box-shadow: 0 0 10px 5px #EBEBEB 2px 5px rgba(0, 0, 0, 0.4);
-  -khtml-box-shadow: 0 0 10px 5px #EBEBEB 2px 5px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 10px 5px #EBEBEB 2px 5px rgba(0, 0, 0, 0.4);
-  -ms-box-shadow: 0 0 10px 5px #EBEBEB 2px 5px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 0 0 10px 5px #EBEBEB 2px 5px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px 5px #EBEBEB 2px 5px rgba(0, 0, 0, 0.4);
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
 }

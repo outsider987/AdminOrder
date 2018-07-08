@@ -430,3 +430,10 @@
   @mixin animation($str) {
     @include css3-prefix('animation', $str);
   }
+  @mixin inline-block() {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+  }

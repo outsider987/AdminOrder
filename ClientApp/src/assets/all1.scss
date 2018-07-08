@@ -6,6 +6,17 @@ html{
         background: #EBEBEB;
     }
 }
+
+.green{
+    color: #7ED321;
+} 
+.red{
+    color:#D0021B;
+}
+.blue {
+    color: #4A90E2;
+}
+
 #header{
       display: inline-block;
       width:100%;
@@ -142,6 +153,7 @@ html{
             }
         }
         .n3{
+            margin-top: 16px;
             display: inline-block;
             width: 100%;
             border: 1px solid rgba(255,0,0,.3);
@@ -157,10 +169,10 @@ html{
                     margin-left: 20px;
                 }
             }
-            .panel{
-                
-                div{
-                    
+            .panel{                
+                                
+                div{        
+                    margin-top: 2.4%;  
                     display: inline-block;
                     width: 100%;
                     font-size: 16px;
@@ -169,19 +181,47 @@ html{
                     line-height: 22px;
                     border: 1px solid rgba(255,0,0,.3);
                 }
+                b{
+                    font-size: 36px;
+                    
+                }
+                
                 
             }
         }
-       
+        .n2{
+            display: inline-block;
+            width:100%;
+            height: 400px;
+            .panel{
+                border: 1px solid rgba(255,0,0,.3);
+                display: inline-block;
+                width:100%;
+                height: 100%;
+                .Table_Title{ 
+                    margin-top: 2.4%;
+                    border: 1px solid rgba(255,0,0,.3);                 
+                    
+                    float: left;
+                    font-weight:bold;
+                    color: black;
+                    size: 24px;
+                }
+            }
+        }
     }
 }
 .panel{
     
-    display: inline-block;   
+    display: inline-block;
+    text-align: center;   
     background-color: white; 
-    @include box-shadow( 0 0 10px 5px #EBEBEB);
-    @include border-radius(3px);
-    //@include inline-block();
+   // @include box-shadow( 0 0 10px 5px #EBEBEB);
+   // @include border-radius(3px);
+    
+}
 
-}  
+  
+
+ 
   
