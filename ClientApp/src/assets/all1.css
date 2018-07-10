@@ -361,6 +361,24 @@ html body {
   font-size: 16px;
 }
 
+#main .container .n1 .left .list .item .rate:before {
+  display: inline-block;
+}
+
+#main .container .n1 .left .list .item .rate.green:before {
+  content: "\ea32";
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'icomoon';
+}
+
+#main .container .n1 .left .list .item .tip {
+  width: 18.2%;
+  height: 7.2%;
+  background-color: black;
+  color: #EBEBEB;
+}
+
 #main .container .n1 .right .list {
   display: inline-block;
   border: 1px solid rgba(255, 0, 0, 0.3);
