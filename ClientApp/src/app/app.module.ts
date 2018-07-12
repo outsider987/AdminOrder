@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    ProductComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,12 @@ import { RouterModule } from '@angular/router';
       {
         path: 'product',
         component: ProductComponent
-      }
+      },
+      { path: '', redirectTo: '', pathMatch: 'full'},
+    //  {
+     //   path: 'home',
+      //  component: HomeComponent
+     // },
     ])
   ],
   providers: [],
