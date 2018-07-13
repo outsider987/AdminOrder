@@ -1,18 +1,53 @@
 
+    
+    <link rel="stylesheet"  href="assets/SCSS/all1.css">
 
+    <!-- gogoole 的chart API串聯 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Activity',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart'));
+
+        chart.draw(data, options);
+      }
+    </script> 
+
+
+
+<!-- 標體的地方 -->
   <header id ='header'>
     <div class = 'container'>
       <div class ='logo'>Shoptime</div>
         <div class ='menu'>
-          <a href="" class = "active">Home</a>
+          <a href="" class = "active"  routerLink = "home">Home</a>
           <a href="">ORDERS</a>
-          <a href="">PRODUCT</a>
+          <a href="" routerLink = "../product">PRODUCT</a>
         </div>
       <div class = 'admin'>Admin</div>
     </div>
   </header>
+
+  <!-- 主要菜單 -->
   <div id='main'>
       <div class = 'container'>
+        <!-- 主要資訊的地方 -->
         <div class = 'info '> 
           <div class='left'>OVERVIEW</div>
           <div class='right'>
@@ -36,6 +71,8 @@
            
           </div>          
         </div>
+
+        <!-- 三個選單 -->
         <div class = "n3">
           <div class ="panel">
             <div class ="">TOTAL REVENUE</div>
@@ -51,12 +88,13 @@
             <b class= "blue">41,880</b>
           </div>       
         </div>
+        
+        <!-- 表格地方 -->
         <div class ="n2">
-          <div id ="chart"class ="panel">
-            
-         
+          <div id ="chart" class ="panel">         
           </div>
         </div>
+        <!-- 左側social media -->
         <div class = "n1">
           <div class = "panel left">            
             <b >Transaction Website</b>
@@ -116,6 +154,7 @@
             
             </div>      
           </div>
+          <!-- 右側商品資訊 -->
           <div class = "panel right">
             <b class ="link_Title">Latest Orders</b>
             <div class = "list">

@@ -22,11 +22,11 @@ import { HomeComponent } from './home/home.component';
         path: 'product',
         component: ProductComponent
       },
-      { path: '', redirectTo: '', pathMatch: 'full'},
-    //  {
-     //   path: 'home',
-      //  component: HomeComponent
-     // },
+      { path: '', component: HomeComponent},
+      {
+        path: 'home',
+        component: HomeComponent
+      },
     ])
   ],
   providers: [],
