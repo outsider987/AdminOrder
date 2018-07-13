@@ -1,0 +1,247 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+------------------------------------------------------------- */
+html {
+  min-height: 100%;
+}
+
+html body {
+  color: #5a5a5a;
+  background: #EBEBEB;
+}
+
+.green {
+  color: #7ED321;
+}
+
+.red {
+  color: #D0021B;
+}
+
+.blue {
+  color: #4A90E2;
+}
+
+#header {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: #9b9b9b;
+  text-align: center;
+}
+
+#header .container {
+  display: inline-block;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  font-weight: bold;
+  *zoom: 1;
+}
+
+#header .container::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#header .container > * {
+  float: left;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+}
+
+#header .container .logo {
+  width: 120px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+#header .container .admin {
+  width: 60px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+#header .container .menu {
+  width: calc(100% - 120px - 60px);
+  *zoom: 1;
+}
+
+#header .container .menu::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#header .container .menu > * {
+  position: relative;
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  color: #9b9b9b;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+#header .container .menu > *:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: #9b9b9b;
+  opacity: 0;
+}
+
+#header .container .menu > *.active, #header .container .menu > *:hover {
+  color: white;
+}
+
+#header .container .menu > *.active:after, #header .container .menu > *:hover:after {
+  color: white;
+  background-color: white;
+  opacity: 1;
+}
+
+#main {
+  margin-top: 32px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  padding-bottom: 42px;
+}
+
+#main .container {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  width: 100%;
+}
+
+#main .container .info {
+  display: inline-block;
+  width: 100%;
+  *zoom: 1;
+}
+
+#main .container .info::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#main .container .info > * {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#main .container .info .left {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#main .container .info .right {
+  *zoom: 1;
+}
+
+#main .container .info .right::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#main .container .info .right > * {
+  float: right;
+  display: inline-block;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#main .container .info .right > * > span {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+#main .container .info .right > * > i {
+  color: black;
+  font-size: 16px;
+}
+
+#main .container .info .right .unit {
+  margin-left: 32px;
+  position: relative;
+}
+
+#main .container .info .right .unit:hover .list {
+  display: inline-block;
+  background-color: white;
+}
+
+#main .container .info .right .unit .list {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 125px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+#main .container .info .right .unit .list > span {
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+#main .container .info .right .unit .list > span.active, #main .container .info .right .unit .list > span:hover {
+  color: white;
+  background-color: black;
+}
+
+#main .container .info .right .dates {
+  *zoom: 1;
+}
+
+#main .container .info .right .dates::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#main .container .info .right .dates > * {
+  display: inline-block;
+  float: left;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.panel {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+}
