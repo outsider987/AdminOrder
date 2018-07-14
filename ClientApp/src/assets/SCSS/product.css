@@ -40,7 +40,7 @@ html body {
 #header .container {
   display: inline-block;
   width: 100%;
-  max-width: 940px;
+  max-width: 1140px;
   margin: 0 auto;
   font-weight: bold;
   *zoom: 1;
@@ -191,6 +191,13 @@ html body {
 #main .container .info .right .unit {
   margin-left: 32px;
   position: relative;
+  font-weight: bold;
+  color: #EBEBEB;
+  height: 34px;
+  width: 192px;
+  text-align: right;
+  border-radius: 4%;
+  background-color: black;
 }
 
 #main .container .info .right .unit:hover .list {
