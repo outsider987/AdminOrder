@@ -287,6 +287,16 @@ html body {
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
+#main .container .table {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+#main .container .table thead tr th {
+  height: 40px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  background-color: white;
+}
+
 .panel {
   display: inline-block;
   text-align: center;

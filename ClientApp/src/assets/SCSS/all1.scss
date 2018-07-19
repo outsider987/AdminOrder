@@ -1,10 +1,14 @@
 @import 'SCSSfun.scss';
-html{
+body{
     min-height: 100%;
     body{
         color: rgba(90,90,90,1);
-        background: #EBEBEB;
+        background-color: #ebebeb;
     }
+}
+body{
+    color: rgba(90,90,90,1);
+    background: white;
 }
 
 .green{
