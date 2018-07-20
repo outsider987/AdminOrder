@@ -244,20 +244,7 @@ html{
                 }
             }
         }
-        .table{
-            border: 1px solid rgba(255,0,0,.3);
-            thead{
-                tr{
-                    th{
-                        //width: 940px;
-                        height: 40px;
-                        border: 1px solid rgba(255,0,0,.3);
-                        background-color: white;
-                    }
-                }
-                
-            }
-        }
+        
        
     }
 }
@@ -271,3 +258,71 @@ html{
     
 }
 
+.table-list{
+    width: 100%;
+    border: 1px solid rgba(255,0,0,.3);
+    border-spacing:0; 
+    thead{
+        tr{
+            th{
+                //width: 940px;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid rgba(255,0,0,.3);
+                background-color: white;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        
+    }
+    tbody{
+       
+        tr{
+            position: relative;            
+            td{
+                padding: 12px;
+               
+                border: 1px solid rgba(255,0,0,.3);
+                
+                &.product {
+                   
+                    text-align: left;
+                    
+                    .checkbox{
+                                   
+                        margin-top : (50px - 20px)/2;
+                        // margin-right: 20px;
+                        >span{
+                            border: 1px solid rgba(255,255,255,1);
+                            background-color: white;
+                        }
+                    }
+                 
+                    .pic {                                         
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid rgba(255,0,0,.3);
+                        overflow: hidden;
+                        >img{
+                            width:100%;
+                        }
+                    }          
+                }
+                > span {
+            
+                    //position: absolute;
+                    border: 1px solid rgba(255,0,0,.3);
+                    display: inline-block;
+                    font-size:14px;
+                    height: 18px;
+                    margin-top: (50px - 18px)/2;
+                }        
+            }
+           
+          
+           
+        }
+    }
+}

@@ -287,18 +287,65 @@ html body {
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
-#main .container .table {
-  border: 1px solid rgba(255, 0, 0, 0.3);
-}
-
-#main .container .table thead tr th {
-  height: 40px;
-  border: 1px solid rgba(255, 0, 0, 0.3);
-  background-color: white;
-}
-
 .panel {
   display: inline-block;
   text-align: center;
   background-color: white;
+}
+
+.table-list {
+  width: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-spacing: 0;
+}
+
+.table-list thead tr th {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  background-color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.table-list tbody tr {
+  position: relative;
+}
+
+.table-list tbody tr td {
+  padding: 12px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.table-list tbody tr td.product {
+  text-align: left;
+}
+
+.table-list tbody tr td.product .checkbox {
+  margin-top: 15px;
+}
+
+.table-list tbody tr td.product .checkbox > span {
+  border: 1px solid white;
+  background-color: white;
+}
+
+.table-list tbody tr td.product .pic {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.table-list tbody tr td.product .pic > img {
+  width: 100%;
+}
+
+.table-list tbody tr td > span {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: inline-block;
+  font-size: 14px;
+  height: 18px;
+  margin-top: 16px;
 }
