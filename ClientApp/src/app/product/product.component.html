@@ -1,71 +1,111 @@
-<link rel="stylesheet"  href="assets/SCSS/product.css">
+<link rel="stylesheet" href="assets/SCSS/product.css">
 <link rel="stylesheet" href="https://i.icomoon.io/public/temp/bbca1376d3/UntitledProject/style.css">
 
-  <header id ='header'>
-    <div class = 'container'>
-      <div class ='logo'>Shoptime</div>
-        <div class ='menu'>
-          <a href=""   routerLink = "../home">Home</a>
-          <a href="">ORDERS</a>
-          <a href="" class = "active" routerLink = "product">PRODUCT</a>
-        </div>
-      <div class = 'admin'>Admin</div>
+<header id='header'>
+  <div class='container'>
+    <div class='logo'>Shoptime</div>
+    <div class='menu'>
+      <a href="" routerLink="../home">Home</a>
+      <a href="">ORDERS</a>
+      <a href="" class="active" routerLink="product">PRODUCT</a>
     </div>
-  </header>
-  <div id='main'>
-      <div class = 'container'>
-        <div class = 'info '> 
-          <div class='left'>
-            <label class="checkbox">
-              <input type="checkbox"> 
-              <span class ="icon-checkmark"></span>
-            </label>
-          </div>
-          <div class='right'>
-            <div class="unit">
-              <a>ADD NEW PRODUCT</a>
-            </div>
-          
-
-           
-          </div>          
-        </div>
-        <table class = "table-list">
-          <thead>
-            <tr>
-              <th width = '120' >Product</th>
-              <th width = '85'>Original</th>
-              <th width = '92'>Discount</th>
-              <th width = '52'>Size</th>
-              <th width = '65'>Color</th>
-              <th width = '100'>Inventory</th>
-              <th width = '140'>Status</th>
-            </tr>
-
-          </thead>
-          <tbody>
-            <tr>
-              <td class = "product">
-                <label class="checkbox">
-                  <input type="checkbox"> 
-                  <span class ="icon-checkmark"></span>
-                </label>
-                <div class ="pic"><img src=""></div>
-                <span>Mauris non tem.</span>
-
-              </td>
-              <td>2</td>
-              <td>3</td>
-              <td colspan="3">4</td>
-              <td>5</td>
-              
-            </tr>
-          </tbody>
-          
-          
-        </table>
-        
-       
-        
-      </div>
+    <div class='admin'>Admin</div>
   </div>
+</header>
+<div id='main'>
+  <div class='container'>
+    <div class='info '>
+      <div class='left'>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="icon-checkmark"></span>
+        </label>
+      </div>
+      <div class='right'>
+        <div class="unit">
+          <a>ADD NEW PRODUCT</a>
+        </div>
+
+
+
+      </div>
+    </div>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th width='300'>Product</th>
+          <th width='85'>Original</th>
+          <th width='92'>Discount</th>
+          <th width='52'>Size</th>
+          <th width='65'>Color</th>
+          <th width='100'>Inventory</th>
+          <th width='140'>Status</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product">
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="icon-checkmark"></span>
+            </label>
+            <div class="pic">
+              <img src="">
+            </div>
+            <span>Mauris non tem.</span>
+
+          </td>
+          <td class ="original">$3,200</td>
+          <td class ="discount">$2,800</td>
+          <td colspan="3" class="colspan-size-color-Inventory">
+            <div class="item">
+              <div class="size">
+                <span>L</span>
+              </div>
+              <div class="color">
+                <span>Gray</span>
+                <span>black</span>
+              </div>
+              <div class="Inventory">
+                <span>15</span>
+                <span>20</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="size">L</div>
+              <div class="color">
+                <span>Gray</span>
+                <span>black</span>
+              </div>
+              <div class="Inventory">
+                <span>15</span>
+                <span>20</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="size">L</div>
+              <div class="color">
+                <span>Gray</span>
+                <span>black</span>
+              </div>
+              <div class="Inventory">
+                <span>15</span>
+                <span>20</span>
+              </div>
+            </div>
+          </td>
+          <td>5</td>
+
+        </tr>
+      </tbody>
+
+
+    </table>
+
+
+
+  </div>
+</div>

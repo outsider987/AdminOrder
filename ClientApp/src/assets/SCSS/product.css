@@ -120,7 +120,6 @@ html body {
 }
 
 .checkbox {
-  border: 1px solid rgba(255, 0, 0, 0.3);
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -299,6 +298,10 @@ html body {
   border-spacing: 0;
 }
 
+.table-list thead {
+  text-align: center;
+}
+
 .table-list thead tr th {
   height: 40px;
   line-height: 40px;
@@ -308,7 +311,7 @@ html body {
   font-size: 16px;
 }
 
-.table-list tbody tr {
+.table-list tbody {
   position: relative;
 }
 
@@ -322,15 +325,18 @@ html body {
 }
 
 .table-list tbody tr td.product .checkbox {
-  margin-top: 15px;
+  position: relative;
+  margin-top: -15px;
 }
 
 .table-list tbody tr td.product .checkbox > span {
+  margin-top: -5px;
   border: 1px solid white;
   background-color: white;
 }
 
 .table-list tbody tr td.product .pic {
+  margin-left: 8px;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -338,14 +344,57 @@ html body {
   overflow: hidden;
 }
 
-.table-list tbody tr td.product .pic > img {
-  width: 100%;
-}
-
-.table-list tbody tr td > span {
+.table-list tbody tr td.product > span {
+  position: absolute;
   border: 1px solid rgba(255, 0, 0, 0.3);
   display: inline-block;
   font-size: 14px;
   height: 18px;
   margin-top: 16px;
+  margin-left: 8px;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory {
+  text-align: left;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item {
+  display: inline-block;
+  width: 100%;
+  height: 58px;
+  border-bottom: 2px solid white;
+  *zoom: 1;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item > * {
+  float: left;
+  display: inline-block;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item > * span {
+  width: 100%;
+  display: inline-block;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item .size {
+  width: 78px;
+  text-align: left;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item .color {
+  text-align: center;
+  width: 116px;
+}
+
+.table-list tbody tr td.colspan-size-color-Inventory .item .Inventory {
+  text-align: right;
+  width: 150px;
 }
