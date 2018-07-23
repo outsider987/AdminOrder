@@ -18,6 +18,9 @@ html {
 .blue {
     color: #4A90E2;
 }
+.yellow{
+    color: #F5A623;
+}
 
 #header {
     display: inline-block;
@@ -251,9 +254,11 @@ html {
         position: relative;
         tr {
             td {
-                padding: 12px;
+                
+                padding-bottom: 180px;
                 border: 1px solid rgba(255, 0, 0, .3);
                 &.product {
+                    padding-bottom: 180px;
                     text-align: left;
                     .checkbox {
                         position: relative;
@@ -287,13 +292,13 @@ html {
                     }
                 }
                 &.original{
-                    
+                    padding-bottom: 180px;
                 }
                 &.discount{
-                    
+                    padding-bottom: 180px;
                 }
                 &.colspan-size-color-Inventory {
-                    
+                    padding-bottom: 50px;
                     text-align: left;
                     .item {
                         display: inline-block;
@@ -322,6 +327,41 @@ html {
                             text-align: right;
                             width: 150px;
                         }
+                    }
+                }
+                &.status{
+                    //border: 1px solid rgba(255, 0, 0, .3);
+                    .select{
+                        top: 50px;
+                        text-align: center;
+                        width: 100%;
+                        position: relative;
+                        padding-bottom: 50px;
+                        border: 1px solid rgba(255, 0, 0, .3);
+                        display: inline-block;
+                        
+                        
+                        
+                        > span{
+                            background-color: #F5A623;
+                            display: inline-block;
+                            height: 34px;
+                            line-height: 34px;
+                            border: 1px solid rgba(255, 0, 0, .3);
+                            color:white;
+                        }
+                        .list{                    
+                            border: 1px solid rgba(255, 0, 0, .3);
+                            display: inline-block;
+                            width: 125px;
+                            height: 152px;
+                            >span{
+                               
+                                display: inline-block;
+                                border: 1px solid rgba(255, 0, 0, .3);
+                            }
+                        }
+                        
                     }
                 }
             }
