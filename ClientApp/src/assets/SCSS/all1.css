@@ -7,11 +7,11 @@
   note: All CSS3 Properties are being supported by Safari 5
   more info: http://www.findmebyip.com/litmus/#css3-properties
 ------------------------------------------------------------- */
-body {
+html {
   min-height: 100%;
 }
 
-body body {
+html body {
   color: #5a5a5a;
   background-color: #ebebeb;
 }
@@ -78,7 +78,6 @@ body {
   font-size: 16px;
   color: white;
   font-weight: bold;
-  margin-right: px;
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 

@@ -320,12 +320,12 @@ html body {
 }
 
 .table-list tbody tr td {
-  padding-bottom: 180px;
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .table-list tbody tr td.product {
-  padding-bottom: 180px;
+  padding-top: 25px;
+  padding-bottom: 200px;
   text-align: left;
 }
 
@@ -360,15 +360,16 @@ html body {
 }
 
 .table-list tbody tr td.original {
+  text-align: center;
   padding-bottom: 180px;
 }
 
 .table-list tbody tr td.discount {
+  text-align: center;
   padding-bottom: 180px;
 }
 
 .table-list tbody tr td.colspan-size-color-Inventory {
-  padding-bottom: 50px;
   text-align: left;
 }
 
@@ -414,6 +415,9 @@ html body {
 }
 
 .table-list tbody tr td.status .select {
+  border-radius: 4px;
+  background-color: #F5A623;
+  color: white;
   position: relative;
   left: 20px;
   border: 1px solid rgba(255, 0, 0, 0.3);
@@ -428,9 +432,12 @@ html body {
 }
 
 .table-list tbody tr td.status .select .list {
+  background-color: white;
+  color: black;
+  height: 130px;
   border: 1px solid rgba(255, 0, 0, 0.3);
   display: inline-block;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .table-list tbody tr td.status .select .list > span {
