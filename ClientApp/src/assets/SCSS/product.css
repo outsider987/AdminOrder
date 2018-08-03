@@ -415,29 +415,49 @@ html body {
 }
 
 .table-list tbody tr td.status .select {
+  cursor: pointer;
+  bottom: 50px;
   border-radius: 4px;
-  background-color: #F5A623;
   color: white;
   position: relative;
   left: 20px;
-  border: 1px solid rgba(255, 0, 0, 0.3);
   text-align: center;
   display: inline-block;
   width: 120px;
 }
 
+.table-list tbody tr td.status .select:hover .list {
+  display: inline-block;
+}
+
 .table-list tbody tr td.status .select > span {
+  border-radius: 3px;
+  background-color: #F5A623;
+  width: 112px;
   display: inline-block;
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
+.table-list tbody tr td.status .select > * {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: inline-block;
+}
+
 .table-list tbody tr td.status .select .list {
+  border-radius: 3px;
+  top: 8px;
+  position: relative;
   background-color: white;
   color: black;
   height: 130px;
-  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: none;
+  box-shadow: 3px 3px 3px 3px #9B9B9B;
+}
+
+.table-list tbody tr td.status .select .list > * {
   display: inline-block;
-  padding-top: 15px;
+  width: 100%;
+  height: 34px;
 }
 
 .table-list tbody tr td.status .select .list > span {
