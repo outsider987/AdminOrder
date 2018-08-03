@@ -416,7 +416,6 @@ html body {
 
 .table-list tbody tr td.status .select {
   cursor: pointer;
-  bottom: 50px;
   border-radius: 4px;
   color: white;
   position: relative;
@@ -439,6 +438,8 @@ html body {
 }
 
 .table-list tbody tr td.status .select > * {
+  position: relative;
+  top: 0;
   border: 1px solid rgba(255, 0, 0, 0.3);
   display: inline-block;
 }
@@ -449,7 +450,6 @@ html body {
   position: relative;
   background-color: white;
   color: black;
-  height: 130px;
   display: none;
   box-shadow: 3px 3px 3px 3px #9B9B9B;
 }
@@ -458,6 +458,11 @@ html body {
   display: inline-block;
   width: 100%;
   height: 34px;
+}
+
+.table-list tbody tr td.status .select .list > *.active, .table-list tbody tr td.status .select .list > *:hover {
+  background-color: black;
+  color: white;
 }
 
 .table-list tbody tr td.status .select .list > span {

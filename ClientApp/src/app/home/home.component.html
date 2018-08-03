@@ -1,178 +1,187 @@
+<link rel="stylesheet" href="assets/SCSS/all1.css">
 
-    
-    <link rel="stylesheet"  href="assets/SCSS/all1.css">
 
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/262940ed05/UntitledProject/style.css">
-    <!-- gogoole 的chart API串聯 -->
-    
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/262940ed05/UntitledProject/style.css">
+<!-- gogoole 的chart API串聯 -->
+
 
 
 <!-- 標體的地方 -->
-  <header id ='header'>
-    <div class = 'container'>
-      <div class ='logo'>Shoptime</div>
-        <div class ='menu'>
-          <a href="" class = "active"  routerLink = "home">Home</a>
-          <a href="">ORDERS</a>
-          <a href="" routerLink = "../product">PRODUCT</a>
-        </div>
-      <div class = 'admin'>Admin</div>
+<header id='header'>
+  <div class='container'>
+    <div class='logo'>Shoptime</div>
+    <div class='menu'>
+      <a href="" class="active" routerLink="home">Home</a>
+      <a href="">ORDERS</a>
+      <a href="" routerLink="../product">PRODUCT</a>
     </div>
-  </header>
+    <div class='admin'>Admin</div>
+  </div>
+</header>
 
-  <!-- 主要菜單 -->
-  <div id='main'>
-      <div class = 'container'>
-        <!-- 主要資訊的地方 -->
-        <div class = 'info '> 
-          <div class='left'>OVERVIEW</div>
-          <div class='right'>
-            <div class="unit">
-              <span class="icon-play3">Weekly</span>
-              <i class="icon-play3"></i>
-              <div class = "list">
-                <span class ="active">Daily</span>
-                <span>Weekly</span>
-                <span>Monthly</span>
-                <span>Yearly</span>
-                <span>Custom</span>
-              </div>
-            </div>
-           <div >
-              <span class="icon-play3">2018/6/6</span>
-              <i class="icon-play3"></i>
-              <span>2018/6/13</span>
-           </div>   
-
-           
-          </div>          
-        </div>
-
-        <!-- 三個選單 -->
-        <div class = "n3">
-          <div class ="panel">
-            <div class ="">TOTAL REVENUE</div>
-            <b class = "green">54,540</b>
-          </div>
-          <div class ="panel">
-            <div class ="">TOTAL COSAT</div>
-            <b class = "red">12,660</b>
-          </div>
-          
-          <div class ="panel">
-            <div class ="">NET INCOMME</div>
-            <b class= "blue">41,880</b>
-          </div>       
-        </div>
-        
-        <!-- 表格地方 -->
-        <div class ="n2">
-          <div id ="chart" class ="panel">         
+<!-- 主要菜單 -->
+<div id='main'>
+  <div class='container'>
+    <!-- 主要資訊的地方 -->
+    <div class='info '>
+      <div class='left'>OVERVIEW</div>
+      <div class='right'>
+        <div class="unit">
+          <span class="icon-play3">Weekly</span>
+          <i class="icon-play3"></i>
+          <div class="list">
+            <span class="active">Daily</span>
+            <span>Weekly</span>
+            <span>Monthly</span>
+            <span>Yearly</span>
+            <span>Custom</span>
           </div>
         </div>
-        <!-- 左側social media -->
-        <div class = "n1">
-          <div class = "panel left">            
-            <b >Transaction Website</b>
-            <div class = "list">
-              <div class = "item">
-                <span class ="icon-facebook2"></span>
-                <span class = "name " >facebook.com</span>
-                <span class = "num" >45,836</span>
-                <span class = "rate green icon-arrow-up" >
-                  20%
-                    <div class = "tip">
-                      <div class = "test">INCRASE <b>899</b> VIEWS</div>
-                      <i>last week: 44,937</i>
-                    </div> 
-                </span>
-                              
-              </div>
+        <div>
+          <span class="icon-play3">2018/6/6</span>
+          <i class="icon-play3"></i>
+          <span>2018/6/13</span>
+        </div>
 
-              <div class = "item">
-                <span class ="icon-google"></span>
-                <span class = "name" >google.com</span>
-                <span class = "num" >45,836</span>
-                <span class = "rate green icon-arrow-up" >
-                  20%
-                    <div class = "tip">
-                      <div class = "test">INCRASE <b>899</b> VIEWS</div>
-                      <i>last week: 44,937</i>
-                    </div> 
-                </span>               
-              </div>
-              
 
-              <div class = "item">
-                <span class ="icon-facebook2"></span>
-                <span class = "name" >Shopify.com</span>
-                <span class = "num" >45,836</span>
-                <span class = "rate red icon-arrow-down" >
-                  20%
-                    <div class = "tip">
-                      <div class = "test">INCRASE <b>899</b> VIEWS</div>
-                      <i>last week: 44,937</i>
-                    </div> 
-                </span>               
-                  </div>
-              <div class = "item">
-                <span class ="icon-facebook2"></span>
-                <span class = "name" >Wordpress.com</span>
-                <span class = "num" >45,836</span>
-                <span class = "rate red icon-arrow-down" >
-                  20%
-                    <div class = "tip">
-                      <div class = "test">INCRASE <b>899</b> VIEWS</div>
-                      <i>last week: 44,937</i>
-                    </div> 
-                </span>               
+      </div>
+    </div>
+
+    <!-- 三個選單 -->
+    <div class="n3">
+      <div class="panel">
+        <div class="">TOTAL REVENUE</div>
+        <b class="green">54,540</b>
+      </div>
+      <div class="panel">
+        <div class="">TOTAL COSAT</div>
+        <b class="red">12,660</b>
+      </div>
+
+      <div class="panel">
+        <div class="">NET INCOMME</div>
+        <b class="blue">41,880</b>
+      </div>
+    </div>
+
+    <!-- 表格地方 -->
+    <div class="n2">
+      <div id="chart" class="panel">
+      </div>
+    </div>
+    <!-- 左側social media -->
+    <div class="n1">
+      <div class="panel left">
+        <b>Transaction Website</b>
+        <div class="list">
+          <div class="item">
+            <span class="icon-facebook2"></span>
+            <span class="name ">facebook.com</span>
+            <span class="num">45,836</span>
+            <span class="rate green icon-arrow-up">
+              20%
+              <div class="tip">
+                <div class="test">INCRASE
+                  <b>899</b> VIEWS</div>
+                <i>last week: 44,937</i>
               </div>
-            
-            </div>      
+            </span>
+
           </div>
-          <!-- 右側商品資訊 -->
-          <div class = "panel right">
-            <b class ="link_Title">Latest Orders</b>
-            <div class = "list">
-              <div class ="item">
-                <div class = "pic"><img src = ""></div>              
-                <div class = "info">
-                  <b class = "Clothes">Vintage T-shirt</b>
-                  <span class = "icon-clock2">2018/6/13 13:42</span>
-                  <span class = "">Belle Willis</span>
-                </div>
-                <div class = "total">
-                  <b>3200</b>
-                </div>
-              </div>
 
-              <div class ="item">
-                  <div class = "pic"><img src = ""></div>              
-                  <div class = "info">
-                    <b class = "Clothes">Vintage T-shirt</b>
-                    <span class = "icon-clock2">2018/6/13 13:42</span>
-                    <span class = "">Belle Willis</span>
-                  </div>
-                  <div class = "total">
-                    <b>3200</b>
-                  </div>
-                </div>
-                
-                <div class ="item">
-                    <div class = "pic"><img src = ""></div>              
-                    <div class = "info">
-                      <b class = "Clothes">Vintage T-shirt</b>
-                      <span class = "icon-clock2">2018/6/13 13:42</span>
-                      <span class = "">Belle Willis</span>
-                    </div>
-                    <div class = "total">
-                      <b>3200</b>
-                    </div>
-                  </div>
-              
-            </div> 
+          <div class="item">
+            <span class="icon-google"></span>
+            <span class="name">google.com</span>
+            <span class="num">45,836</span>
+            <span class="rate green icon-arrow-up">
+              20%
+              <div class="tip">
+                <div class="test">INCRASE
+                  <b>899</b> VIEWS</div>
+                <i>last week: 44,937</i>
+              </div>
+            </span>
           </div>
-          
+
+
+          <div class="item">
+            <span class="icon-facebook2"></span>
+            <span class="name">Shopify.com</span>
+            <span class="num">45,836</span>
+            <span class="rate red icon-arrow-down">
+              20%
+              <div class="tip">
+                <div class="test">INCRASE
+                  <b>899</b> VIEWS</div>
+                <i>last week: 44,937</i>
+              </div>
+            </span>
+          </div>
+          <div class="item">
+            <span class="icon-facebook2"></span>
+            <span class="name">Wordpress.com</span>
+            <span class="num">45,836</span>
+            <span class="rate red icon-arrow-down">
+              20%
+              <div class="tip">
+                <div class="test">INCRASE
+                  <b>899</b> VIEWS</div>
+                <i>last week: 44,937</i>
+              </div>
+            </span>
+          </div>
+
         </div>
       </div>
+      <!-- 右側商品資訊 -->
+      <div class="panel right">
+        <b class="link_Title">Latest Orders</b>
+        <div class="list">
+          <div class="item">
+            <div class="pic">
+              <img src="">
+            </div>
+            <div class="info">
+              <b class="Clothes">Vintage T-shirt</b>
+              <span class="icon-clock2">2018/6/13 13:42</span>
+              <span class="">Belle Willis</span>
+            </div>
+            <div class="total">
+              <b>3200</b>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pic">
+              <img src="">
+            </div>
+            <div class="info">
+              <b class="Clothes">Vintage T-shirt</b>
+              <span class="icon-clock2">2018/6/13 13:42</span>
+              <span class="">Belle Willis</span>
+            </div>
+            <div class="total">
+              <b>3200</b>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="pic">
+              <img src="">
+            </div>
+            <div class="info">
+              <b class="Clothes">Vintage T-shirt</b>
+              <span class="icon-clock2">2018/6/13 13:42</span>
+              <span class="">Belle Willis</span>
+            </div>
+            <div class="total">
+              <b>3200</b>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>
