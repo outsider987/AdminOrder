@@ -11,11 +11,28 @@
 #box .content {
   position: absolute;
   width: 940px;
-  height: calc(100% - 80px);
+  height: calc(100% - 80px - 20px);
   background-color: white;
   top: 80px;
   left: calc((50% - 940px / 2));
   z-index: 2;
+}
+
+#box .content .title {
+  background-color: black;
+  width: 940px;
+  height: 64px;
+  display: inline-block;
+}
+
+#box .content .title span {
+  margin-top: 19px;
+  margin-left: 35px;
+  float: left;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 #box .cover {
