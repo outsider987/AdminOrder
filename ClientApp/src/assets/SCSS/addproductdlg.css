@@ -1,3 +1,12 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+------------------------------------------------------------- */
 #box {
   position: fixed;
   left: 0;
@@ -46,8 +55,34 @@
   z-index: 1;
 }
 
-#box .righrt {
-  border: 1px solid rgba(255, 0, 0, 0.3);
+#box .main {
+  display: inline-block;
   width: 100%;
+  *zoom: 1;
+}
+
+#box .main::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#box .main > * {
+  float: left;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  display: inline-block;
+  width: calc(50% - 30px / 2);
+}
+
+#box .main > * + * {
+  margin-left: 30px;
+}
+
+#box .main .right {
+  display: inline-block;
+}
+
+#box .main .left {
   display: inline-block;
 }

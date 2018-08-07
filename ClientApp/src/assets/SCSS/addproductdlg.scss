@@ -1,3 +1,4 @@
+@import 'SCSSfun.scss';
 #box{
     position: fixed;
     left: 0;
@@ -42,9 +43,27 @@
         top: 0;
         z-index: 1;
     }
-    .righrt{
-        border: 1px solid rgba(255, 0, 0, .3);
-        width: 100%;
+    .main{
         display: inline-block;
+        width: 100%;
+      
+        @include clearfix();
+        >*{
+            float: left;
+            border: 1px solid rgba(255, 0, 0, .3);
+            display: inline-block;
+            width: calc(50% - 30px / 2);
+            +*{
+                margin-left: 30px;
+            }
+        }
+        .right{
+            // border: 1px solid rgba(255, 0, 0, .3);
+            display: inline-block;
+        }
+        .left{
+            display: inline-block;
+        }
     }
+    
 }
