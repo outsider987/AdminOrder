@@ -112,10 +112,44 @@
   display: inline-block;
   width: 100%;
   height: 115px;
-  line-height: 115px;
-  font-size: 30px;
+  line-height: 30px;
+  font-size: 35px;
   background-color: #EBEBEB;
   text-align: center;
+}
+
+#box .main .left .upload b {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+}
+
+#box .main .left .img {
+  display: inline-block;
+  width: 100%;
+  *zoom: 1;
+}
+
+#box .main .left .img img {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+}
+
+#box .main .left .img::after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+#box .main .left .img > * {
+  width: calc((100% - 8px * 2)/3);
+  float: left;
+  display: inline-block;
 }
 
 #box .main .right {
@@ -224,6 +258,7 @@
 }
 
 #box .main .right .add {
+  font-weight: bold;
   display: inline-block;
   width: 100%;
   height: 38px;
@@ -232,6 +267,13 @@
   border: 1px solid rgba(255, 0, 0, 0.3);
   text-decoration: none;
   color: white;
+}
+
+#box .main .right .add:after {
+  content: "\ea0a";
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'icomoon';
 }
 
 #box .main .left {
