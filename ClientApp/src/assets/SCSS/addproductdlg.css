@@ -29,9 +29,10 @@
 
 #box .content .title {
   background-color: black;
-  width: 940px;
+  width: 100%;
   height: 64px;
   display: inline-block;
+  text-align: left;
   *zoom: 1;
 }
 
@@ -42,13 +43,31 @@
   clear: both;
 }
 
+#box .content .title > * {
+  width: calc(50%);
+  display: inline-block;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
 #box .content .title span {
+  width: 40%;
   margin-top: 19px;
   margin-left: 35px;
   float: left;
   display: inline-block;
   color: white;
   font-weight: bold;
+  font-size: 24px;
+}
+
+#box .content .title > a {
+  margin-left: 35px;
+  text-align: right;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  margin-top: 19px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
   font-size: 24px;
 }
 
@@ -87,6 +106,16 @@
 
 #box .main > * + * {
   margin-left: 30px;
+}
+
+#box .main .left .upload {
+  display: inline-block;
+  width: 100%;
+  height: 115px;
+  line-height: 115px;
+  font-size: 30px;
+  background-color: #EBEBEB;
+  text-align: center;
 }
 
 #box .main .right {
@@ -156,6 +185,10 @@
   height: 38px;
 }
 
+#box .main .right .n2 .set + * {
+  margin-left: 8px;
+}
+
 #box .main .right .n2 > * {
   display: inline-block;
   width: calc( (100% - 8px)/2);
@@ -184,6 +217,10 @@
 #box .main .right .n3 .set > input {
   display: inline-block;
   height: 38px;
+}
+
+#box .main .right .n3 .set + * {
+  margin-left: 8px;
 }
 
 #box .main .right .add {
